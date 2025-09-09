@@ -8,10 +8,12 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<a href="#main" class="skip-link">Saltar al contenido</a>
+
 		<section class="container">
 			<header>
 				<h1>MANACO</h1>
-				<nav>
+				<nav aria-label="Navegación principal">
 					<ul>
 						<li><a href="#home">Inicio</a></li>
 						<li><a href="#services">Servicios</a></li>
@@ -20,7 +22,7 @@
 				</nav>
 			</header>
 
-			<main>
+			<main id="main">
 				<section id="hero" class="hero">
 					<p>Calzado que impulsa tu paso</p>
 				</section>
@@ -28,30 +30,39 @@
 				<h2>Productos</h2>
 
 				<section id="products" class="product">
-					<article>
-						<img src="/image-x-test.png" alt="" />
+					<article id="product-1">
+						<img
+							src="/image-x-test.png"
+							alt="Primer articulo a la venta de MANACO, calzado elegante"
+						/>
 						<h3>Producto 1</h3>
 						<p>$00.00</p>
-						<button type="button">Comprar</button>
+						<button type="button" aria-label="Comprar Producto 1">Comprar</button>
 					</article>
 
-					<article>
-						<img src="/image-x-test.png" alt="" />
+					<article id="product-2">
+						<img
+							src="/image-x-test.png"
+							alt="Segundo articulo a la venta de MANACO, calzado deportivo"
+						/>
 						<h3>Producto 2</h3>
 						<p>$00.00</p>
-						<button type="button">Comprar</button>
+						<button type="button" aria-label="Comprar Producto 2">Comprar</button>
 					</article>
 
-					<article>
-						<img src="/image-x-test.png" alt="" />
+					<article id="product-3">
+						<img
+							src="/image-x-test.png"
+							alt="Tercer articulo a la venta de MANACO, calzado casual"
+						/>
 						<h3>Producto 3</h3>
 						<p>$00.00</p>
-						<button type="button">Comprar</button>
+						<button type="button" aria-label="Comprar Producto 3">Comprar</button>
 					</article>
 				</section>
 			</main>
 
-			<footer>
+			<footer id="footer">
 				<p>Copyright 2025 MANACO</p>
 			</footer>
 		</section>
