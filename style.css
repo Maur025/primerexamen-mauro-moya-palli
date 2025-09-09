@@ -134,3 +134,55 @@ main h2 {
 .skip-link:focus {
 	top: 0;
 }
+
+.menu-mobile {
+	display: none;
+}
+
+@media (width < 400px) {
+	.container header {
+		background-color: red;
+	}
+
+	.container header nav {
+		display: none;
+		visibility: hidden;
+	}
+
+	.hero {
+		display: none;
+	}
+
+	.menu-mobile {
+		display: block;
+		border: none;
+		background-color: transparent;
+		font-size: 2rem;
+	}
+
+	.product {
+		margin-bottom: 20px;
+	}
+
+	.product article {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr auto;
+		border: 1px solid black;
+		align-items: center;
+	}
+
+	.product article img {
+		grid-row-start: span 2;
+		width: 80%;
+	}
+
+	.product article button {
+		display: none;
+	}
+
+	.container footer {
+		background-color: blue;
+		color: white;
+	}
+}
